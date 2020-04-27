@@ -120,4 +120,93 @@ body footer {
   -ms-grid-column-span: 2;
   grid-area: credits;
 }
+
+@media (max-width: 700px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .join {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 10%;
+  }
+  body .subscription {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    border-radius: 0;
+    padding: 10%;
+  }
+  body .subscription p {
+    text-align: left;
+  }
+  body .subscription h1 {
+    text-align: left;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  body .subscription h2 {
+    text-align: left;
+  }
+  body .subscription button {
+    height: 40px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  body .whyus {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    border-radius: 0 0 10px 10px;
+    padding: 10%;
+  }
+  body footer {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+}
+
+@media (max-width: 375px) {
+  body .join h1 {
+    font-size: 16px;
+  }
+  body .join h2 {
+    font-size: 11px;
+  }
+  body .join p {
+    font-size: 10px;
+  }
+  body .subscription h2 {
+    font-size: 11px;
+  }
+  body .subscription h1 {
+    font-size: 11px;
+  }
+  body .subscription h1 span {
+    font-size: 16px;
+  }
+  body .subscription p {
+    font-size: 10px;
+  }
+  body .subscription button {
+    width: 40vw;
+  }
+  body .whyus h1 {
+    font-size: 30px;
+  }
+  body .whyus h2 {
+    font-size: 19   px;
+  }
+  body .whyus p {
+    font-size: 13px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

@@ -106,3 +106,109 @@ body{
         grid-area: credits;
     }
 }
+
+@media(max-width:700px){
+    body{
+        display: flex;
+        flex-direction: column;
+
+        .join{
+            order:1;
+            padding: 10%;
+        }
+
+        .subscription{
+            order:2;
+            border-radius: 0;
+            padding:10%;
+
+            p{
+                text-align: left;
+            }
+
+            h1{
+                text-align: left;
+                align-self: flex-start;
+            }
+
+            h2{
+                text-align: left;
+            }
+
+            button{
+                height:40px;
+                align-self: flex-start;
+            }
+        }
+
+        .whyus{
+            order:3;
+            border-radius: 0 0 10px 10px;
+            padding: 10%;
+        }
+        
+        footer{
+            order:4;
+        }
+    }
+}
+
+@media(max-width:375px){
+    body{
+
+        .join{
+            h1{
+                font-size: 16px;
+            }
+
+            h2{
+                font-size: 11px;
+            }
+
+            p{
+                font-size: 10px;
+            }
+        }
+
+        .subscription{
+            h2{
+                font-size: 11px;
+
+            }
+
+            h1{
+                font-size: 11px;
+                
+                span{
+                    font-size: 16px;
+                }
+            }
+
+            p{
+                font-size: 10px;
+            }
+
+            button{
+                width: 40vw;
+            }
+        }
+
+        .whyus{
+            h1{
+                font-size: 30px;
+            }
+
+            h2{
+                font-size: 19   px;
+            }
+
+            p{
+                font-size: 13px;
+            }
+        }
+
+        footer{
+
+        }
+    }
+}
