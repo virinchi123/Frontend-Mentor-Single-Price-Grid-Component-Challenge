@@ -1,7 +1,7 @@
 $colors:(
     cyan:hsl(179, 62%, 43%),
     yellow: hsl(71, 73%, 54%),
-    LightGray: hsl(204, 43%, 93%),
+    LightGrays: hsl(204, 43%, 93%),
     GrayishBlue: hsl(218, 22%, 67%)
 );
 
@@ -16,15 +16,28 @@ body{
         "join join"
         "subscription whyus"
         "credits credits";
-    padding: 10%;
+    padding: 20%;
     font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    background-color: color(LightGrays);
 
     .join{
         grid-area:join;
-        background-color: color(LightGray);
+        background-color: white;
         border-radius: 10px 10px 0 0;
-        padding: 20px;
-        padding-bottom: 0;
+        padding: 20px 100px;
+
+        h1{
+            color: color(cyan);
+        }
+
+        h2{
+            color: color(yellow);
+        }
+
+        p{
+            color: color(GrayishBlue);
+        }
     }
 
     .subscription{
@@ -37,11 +50,12 @@ body{
         text-align: center;
 
         h1{
-            color:white;
+            color:lightgray;
             font-size: 16px;
             align-self: center;
 
             span{
+                color: white;
                 font-size: 32px;
                 margin: 0;
                 align-self: initial;
@@ -58,12 +72,13 @@ body{
 
         button{
             border: none;
-            width: 60%;
+            width: 80%;
             align-self: center;
             height: 16%;
             background-color: color(yellow);
-            box-shadow: 2px 4px 3px #666;
+            box-shadow: 2px 4px 4px rgb(4, 158, 132);
             border-radius: 10px;
+            color: white;
         }
     }
 
@@ -76,8 +91,14 @@ body{
         flex-direction: column;
 
         p{
-            font-size: 15px;
+            font-size: 13px;
             margin:0;
+            color: color(LightGrays);
+
+        }
+
+        h2{
+            color: white;
         }
     }
 

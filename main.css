@@ -4,8 +4,10 @@ body {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "join join" "subscription whyus" "credits credits";
-  padding: 10%;
+  padding: 20%;
   font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  background-color: #e5eff5;
 }
 
 body .join {
@@ -13,10 +15,21 @@ body .join {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: join;
-  background-color: #e5eff5;
+  background-color: white;
   border-radius: 10px 10px 0 0;
-  padding: 20px;
-  padding-bottom: 0;
+  padding: 20px 100px;
+}
+
+body .join h1 {
+  color: #2ab2af;
+}
+
+body .join h2 {
+  color: #c0df34;
+}
+
+body .join p {
+  color: #98a6bd;
 }
 
 body .subscription {
@@ -37,7 +50,7 @@ body .subscription {
 }
 
 body .subscription h1 {
-  color: white;
+  color: lightgray;
   font-size: 16px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -45,6 +58,7 @@ body .subscription h1 {
 }
 
 body .subscription h1 span {
+  color: white;
   font-size: 32px;
   margin: 0;
   -ms-flex-item-align: initial;
@@ -62,15 +76,16 @@ body .subscription p {
 
 body .subscription button {
   border: none;
-  width: 60%;
+  width: 80%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   height: 16%;
   background-color: #c0df34;
-  -webkit-box-shadow: 2px 4px 3px #666;
-          box-shadow: 2px 4px 3px #666;
+  -webkit-box-shadow: 2px 4px 4px #049e84;
+          box-shadow: 2px 4px 4px #049e84;
   border-radius: 10px;
+  color: white;
 }
 
 body .whyus {
@@ -90,8 +105,13 @@ body .whyus {
 }
 
 body .whyus p {
-  font-size: 15px;
+  font-size: 13px;
   margin: 0;
+  color: #e5eff5;
+}
+
+body .whyus h2 {
+  color: white;
 }
 
 body footer {
